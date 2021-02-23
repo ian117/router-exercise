@@ -6,7 +6,7 @@ const NavigationBar = () => {
         <nav>
             <div>
               <Link  to="/">
-              <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/072016/untitled-1_16.png?itok=B4o_2UCy" width="100" height="100"/>
+              <img alt="Logo" src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/072016/untitled-1_16.png?itok=B4o_2UCy" width="100" height="100"/>
               </Link> 
             </div>
             <ul>
