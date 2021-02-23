@@ -15,12 +15,12 @@ const Application = () => {
     return (
     <>
         <Switch>
-        <Route path="/home"><Home/></Route>
-        <Route path="/about"><About/></Route>
-        <Route path="/faq"><FAQ/></Route>
-        <Route path="/store"><Store/></Route>
-        <Route path="/home"></Route>
-        <Route path="/">Soy parte de la Raíz y soy eterno</Route>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/about" component={About}></Route>
+            <Route path="/faq" component={FAQ}></Route>
+            <Route path="/store" component={Store}></Route>
+            <Route path="/home" component={Home}></Route>
+            <Route path="/">Soy parte de la Raíz y soy eterno</Route>
       </Switch>
 </>
     )
