@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #202223;
+  color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+ul{
+  list-style: inside;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+button {
+  background-color: #202923;
+  padding: 20px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  color: #19517c;
+}
+h3 {
+  color: #ac1516;
 }
