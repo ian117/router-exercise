@@ -6,16 +6,20 @@ function App() {
   const [ posts, setPosts] = useState([]);
   const URL = 'https://bender-blog.herokuapp.com/posts';
 
-  useEffect( async () => {
-    const llamado = await fetch(URL)
-    if (!llamado.ok) {
-      throw new Error(`HTTP error! status: ${llamado.status}`);
-    } else {
-      let jsonBender = llamado.json()
-      Promise.all([jsonBender])
-      .then((data) => setPosts(...data))
-    }
-  }, [])
+  useEffect(() => {
+    // const llamado = await fetch(URL)
+    // if (!llamado.ok) {
+    //   throw new Error(`HTTP error! status: ${llamado.status}`);
+    // } else {
+    //   let jsonBender = llamado.json()
+    //   Promise.all([jsonBender])
+    //   .then((data) => setPosts(...data))
+
+    fetch(URL)
+    .then((raw) => raw.json())
+    .then((data) => setPosts(data))
+    
+    }, [])
 
 
   return (

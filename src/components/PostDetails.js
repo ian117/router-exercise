@@ -4,16 +4,15 @@ import {
     Switch,
     useRouteMatch,
     Route,
-    useParams,
   } from "react-router-dom";
 
   const Details = ({content, title}) => {
     return (
-            <>
+            <div>
                 <h3>{title}</h3>
                 <p>{content}</p>
                 <button><Link to="/">Regresar al inicio</Link></button>
-            </>
+            </div>
             )
   };
   
@@ -29,7 +28,7 @@ function PostDetails({arreglo}) {
 
             {arreglo.map((item) => {
                 return (
-                    <Route path={`${path}/${item.id}`}>
+                    <Route key={item.id} path={`${path}/${item.id}`}>
                         <Details content={item.content} title={item.title}/>
                     </Route>
                 )

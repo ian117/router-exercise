@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    HashRouter as Router, Route, Switch, Link,useParams
+    HashRouter as Router, Route, Switch,
   } from "react-router-dom";
 import PostList from "./PostList";
 import PostDetails from "./PostDetails";
