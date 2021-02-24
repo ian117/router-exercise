@@ -28,11 +28,17 @@ li {
   padding-top: 5px;
 }
 
+img {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
 button {
   background-color: #202923;
   padding: 20px;
   margin: auto;
-  display: block;
+  display: inline-block;
 }
 
 h1 {
