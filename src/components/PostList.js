@@ -4,6 +4,7 @@ import {Link,useRouteMatch} from "react-router-dom";
 
 function PostList({array}) {
     let { path, url } = useRouteMatch();
+    console.log(path)
     return (
         <div>
             <h3>Blog entries</h3>

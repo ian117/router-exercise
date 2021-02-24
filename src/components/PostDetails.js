@@ -20,7 +20,7 @@ import {
 
 function PostDetails({arreglo}) {
     let { path, url } = useRouteMatch();
-
+    console.log(url)
 
     return (
         <div>
@@ -34,7 +34,7 @@ function PostDetails({arreglo}) {
                 )
             })}
 
-                <Route path={path}>404, regresa o ya verás <img src={"https://media.tenor.com/images/e051367347fb6fe80190f615ee1f0f1d/raw"}/>
+                <Route path={path}>404, regresa o ya verás <img alt="this404" src={"https://media.tenor.com/images/e051367347fb6fe80190f615ee1f0f1d/raw"}/>
                 <button>
                 <Link to="/">Apresurate o te atraparán</Link>
                 </button></Route>
