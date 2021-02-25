@@ -28,7 +28,7 @@ function PostDetails({arreglo}) {
 
             {arreglo.map((item) => {
                 return (
-                    <Route key={item.id} path={`${path}/${item.id}`}>
+                    <Route key={item.id} path={`${path}${item.id}`}>
                         <Details content={item.content} title={item.title}/>
                     </Route>
                 )

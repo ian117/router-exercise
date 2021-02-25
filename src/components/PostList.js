@@ -12,7 +12,7 @@ function PostList({array}) {
 
                 {array.length > 0 ? array.map((item) => (
                    <li key={item.id}>
-                        <Link to={`${url}/${item.id}`} >{item.title}</Link>
+                        <Link to={`${url}${item.id}`} >{item.title}</Link>
                     </li>
                 )) : null}
 
